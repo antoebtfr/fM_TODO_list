@@ -1,0 +1,94 @@
+body {
+    --main-color-lightmode: hsl(0, 0%, 98%);
+    --secondary-color-lightmode: hsl(233, 11%, 84%);
+    --text-color-lightmode: hsl(237, 14%, 26%);
+    --text-secondary-color-lightmode: hsl(236, 9%, 61%);
+}
+
+body .lightmode {
+    color: var(--text-color-lightmode);
+}
+
+.lightmode .background-image-lightmode {
+    display: block;
+}
+
+.lightmode .ico-sun {
+    display: none;
+}
+
+.lightmode .ico-moon {
+    display: block;
+}
+
+.lightmode .background-image-darkmode {
+    display: none;
+}
+
+.lightmode .task-input-container {
+    background-color: var(--main-color-lightmode);
+}
+
+.lightmode .tasks-container {
+    background-color: var(--main-color-lightmode);
+}
+
+.lightmode .task-add-input {
+    color: var(--text-color-lightmode);
+
+}
+
+.lightmode .task-check-box:hover {
+    background: linear-gradient(var(--main-color-lightmode), var(--main-color-lightmode)) padding-box,
+        linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+}
+
+.lightmode .task-check-box {
+    border: 1px solid var(--secondary-color-lightmode);
+}
+
+.lightmode h1 {
+    color: var(--main-color-lightmode);
+}
+
+.lightmode .items-left,
+.lightmode .tasks-filter-container span,
+.lightmode .tasks-filter-container-mobile span,
+.lightmode .tasks-clear-completed {
+    color: var(--text-secondary-color-lightmode);
+}
+
+.lightmode .tasks-filter-container span.selected,
+.lightmode .tasks-filter-container-mobile span.selected {
+    color: hsl(220, 98%, 61%);
+}
+
+.lightmode .task-item:not(:last-child) {
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+.lightmode .tasks-action-container {
+    border-top: solid 1px hsl(233, 11%, 84%);
+}
+
+.lightmode .tasks-filter-container span:not(.selected):hover,
+.lightmode .tasks-clear-completed:hover {
+    color: var(--text-color-lightmode);
+}
+
+.lightmode .drag-and-drop-text {
+    color: var(--text-secondary-color-lightmode);
+}
+
+.lightmode .tasks-filter-container-mobile {
+    background-color: var(--main-color-lightmode);
+}
+
+.lightmode .task-item[data-status="completed"] p {
+    color: var(--text-secondary-color-lightmode)
+}
+
+.lightmode div[data-status='completed'] .task-check-box {
+    border: none;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }

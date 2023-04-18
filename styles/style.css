@@ -1,0 +1,445 @@
+/* RESET CSS*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  display: none;
+} */
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  width: 100vw;
+  height: 30vh;
+  display: block
+}
+
+.background-image-lightmode {
+  display: none;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.container {
+  width: 40vw;
+  min-width: 600px;
+}
+
+.ico-moon,
+.ico-sun {
+  cursor: pointer;
+}
+
+.ico-moon {
+  display: none;
+}
+
+
+.line-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.task-input-container {
+  background-color: hsl(235, 24%, 19%);
+  padding: 5px 0px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 12px 5px 25px #000000ad;
+}
+
+.task-add-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  caret-color: hsl(233, 14%, 35%);
+}
+
+.task-add-input::placeholder {
+  color: hsl(233, 14%, 35%);
+  font-size: 16px;
+}
+
+.tasks-container {
+  background-color: hsl(235, 24%, 19%);
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 10px 40px #00000070;
+}
+
+.drag-and-drop-text {
+  margin: 25px;
+  text-align: center;
+  color: hsl(233, 14%, 35%);
+}
+
+.tasks-action-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px;
+  display: flex;
+  border-top: solid 1px hsl(233, 14%, 35%);
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.items-left,
+.tasks-filter-container span,
+.tasks-filter-container-mobile span,
+.tasks-clear-completed {
+  color: hsl(233, 14%, 35%);
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.tasks-filter-all,
+.tasks-filter-active {
+  margin-right: 10px;
+}
+
+.tasks-filter-all {
+  margin-left: 10px;
+}
+
+.tasks-filter-container span.selected,
+.tasks-filter-container-mobile span.selected {
+  color: hsl(220, 98%, 61%);
+}
+
+.tasks-filter-container span:not(.selected):hover,
+.tasks-clear-completed:hover {
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.task-item p {
+  cursor: pointer;
+}
+
+.task-check-box {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  background: transparent;
+  border: 1px solid hsl(233, 14%, 35%);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div[data-status='completed'] .task-check-box {
+  border: none;
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+div[data-status='completed'] .task-check-box::after {
+  content: url(../images/icon-check.svg);
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+.task-item[data-status='completed'] p {
+  text-decoration: line-through;
+  color: hsl(233, 14%, 35%);
+}
+
+.task-check-box:hover {
+  background: linear-gradient(hsl(235, 24%, 19%), hsl(235, 24%, 19%)) padding-box,
+    linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+  border: 1px solid transparent;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  height: 65px;
+}
+
+
+.task-cross-delete {
+  padding: 0 10px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  margin-top: 10px;
+}
+
+.task-item .left {
+  display: flex;
+  align-items: center;
+}
+
+.task-item:not(:last-child) {
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+
+
+.task-item:hover .task-cross-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks-list-container {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.tasks-filter-container-mobile {
+  display: none;
+}
+
+.task-item.filtered {
+  display: none;
+}
+
+.no-tasks-message-container {
+  height: 91%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-tasks-message-container.active {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 85vw;
+    min-width: inherit;
+  }
+
+  .tasks-filter-container {
+    display: none;
+  }
+
+  .tasks-filter-container-mobile {
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 5px 10px 40px #00000070
+  }
+
+  .task-input-container {
+    height: 55px;
+  }
+
+  .task-item {
+    height: 65px;
+  }
+
+  .tasks-container {
+    height: 50vh;
+  }
+
+  .task-cross-delete {
+    display: block;
+  }
+
+  .task-check-box {
+    margin-left: 20px;
+  }
+
+  .drag-and-drop-text {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tasks-action-container {
+    height: 60px;
+  }
+
+}

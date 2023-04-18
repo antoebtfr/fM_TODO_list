@@ -1,0 +1,13 @@
+RAF :
+
+
+Regler barre du dessous completed filter
+
+Faits :
+
+Drag and drop
+Responsive Filters 
+item(s) left
+Les filtres
+Clear completed
+Hooks
