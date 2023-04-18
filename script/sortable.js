@@ -2,8 +2,8 @@ class SortableApp {
     constructor() {}
 
     start() {
-        console.log('SortableApp is initialized...');
         new Sortable(document.getElementById('tasks-list-container'), {});
+        console.log('SortableApp is initialized...');
     }
 
 }
